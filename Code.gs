@@ -18,7 +18,9 @@ function checkForChange() {
   html = html.substring(0,15000);
   
   var regex = /<b>/gi, result, indices = [];
-  while ( (result = regex.exec(html)) ) {
+  
+  while ( (result = regex.exec(html)) ) 
+  {
     indices.push(result.index);
   }
   
