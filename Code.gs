@@ -17,10 +17,12 @@ function checkForChange() {
  
   html = html.substring(0,15000);
   
+  
   var regex = /<b>/gi, result, indices = [];
   while ( (result = regex.exec(html)) ) {
     indices.push(result.index);
   }
+  
   
   var text = html.substring(indices[1], indices[2]);
   
